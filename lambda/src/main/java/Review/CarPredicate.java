@@ -2,5 +2,5 @@ package Review;
 
 public interface CarPredicate {
 
-    public boolean test(Car car);
+    boolean test(Car car);
 }
