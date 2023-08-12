@@ -2,17 +2,24 @@ package Review;
 
 import lombok.*;
 
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
+//@Getter
+//@Setter
+//@ToString
+//@EqualsAndHashCode
+//@AllArgsConstructor
+//@RequiredArgsConstructor
+@Data
 @AllArgsConstructor
-@RequiredArgsConstructor
-
+@Builder
 public class Car {
 
     private String make;
     private int topSpeed;
     private final int year;
 
+
+
+
 }
+
+
