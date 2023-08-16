@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="generics" />
         <module name="lambda" />
+        <module name="streams" />
       </profile>
     </annotationProcessing>
   </component>
