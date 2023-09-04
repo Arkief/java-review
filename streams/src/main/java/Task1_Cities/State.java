@@ -1,19 +1,28 @@
 package Task1_Cities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
+/*@Data
+@AllArgsConstructor*/
 public class State {
-    private List<String> cities = new ArrayList<>();
+    /*private List<String> cities = new ArrayList<>();
     public void addCity(String city){
         cities.add(city);
     }
     public List<String> getCities(){
+        return this.cities;
+    }*/
+
+    //Alternate Solution
+    private String name;
+    private List<String> cities = new ArrayList<>();
+
+    public void addCity(String city){
+        cities.add(city);
+    }
+
+    public List<String> getCity(){
         return this.cities;
     }
 }

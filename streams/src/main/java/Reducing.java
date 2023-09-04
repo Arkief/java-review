@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 public class Reducing {
 
@@ -29,6 +30,13 @@ public class Reducing {
 
         long dcount = DishData.getAll().stream().count();
         System.out.println(dcount);
+
+        //Creating Infinite Streams
+        System.out.println("***************************");
+        Stream.iterate(0, n->n+2)
+                .limit(5)
+                .forEach(System.out::println);
+
 
     }
 }

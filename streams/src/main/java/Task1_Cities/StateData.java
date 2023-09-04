@@ -2,7 +2,6 @@ package Task1_Cities;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class StateData {
 
@@ -11,13 +10,13 @@ public class StateData {
     static List<String> texas = Arrays.asList("Dallas","Austin","Arlington");
 
     //With @AllArgsConstructor
-    public static Stream<State> getStates(){
+    /*public static Stream<State> getStates(){
         return Stream.of(
                 new State(alabama),
                 new State(california),
                 new State(texas)
         );
-    }
+    }*/
 
     //Without @AllArgsConstructor
     /*public static State createState(List<String> cities){
